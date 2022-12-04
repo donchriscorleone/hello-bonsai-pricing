@@ -1,0 +1,54 @@
+@import './colors';
+
+.bg-primary-400 {
+    background-color: $primary-400;
+}
+
+.bg-accent-400 {
+    background-color: $accent-400;
+}
+
+.bg-neutral-100 {
+    background-color: $neutral-100;
+}
+
+.bg-neutral-900 {
+    background-color: $neutral-900;
+}
+
+.color-primary-400 {
+    color: $primary-400;
+}
+
+.color-accent-400 {
+    color: $accent-400;
+}
+
+.color-neutral-100 {
+    color: $neutral-100;
+}
+
+.color-neutral-900 {
+    color: $neutral-900;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.ff-lato {
+    font-family: 'Lato', sans-serif;
+}
+
+.ff-times {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
