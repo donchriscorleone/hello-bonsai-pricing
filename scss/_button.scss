@@ -1,0 +1,53 @@
+@import './colors';
+
+button {
+    cursor: pointer;
+}
+
+button[data-type=normal] {
+    padding: .55rem .95rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+
+    &[data-color=primary] {
+        background-color: $primary-400;
+        color: $neutral-100;
+        border: 1px solid $primary-400;
+        transition: background-color .35s, border-color .35s;
+
+        &:hover, &:focus-within {
+            background-color: $primary-700;
+            border-color: $primary-700;
+        }
+    }
+}
+
+button[data-type=outline] {
+    padding: .55rem .95rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: 1.5px solid transparent;
+
+    &[data-color=primary] {
+        background-color: transparent;
+        border-color: $primary-400;
+        color: $primary-400;
+        transition: background-color .35s, color .35s;
+
+        &:hover, &:focus-within {
+            background-color: $primary-400;
+            color: $neutral-100;
+        }
+    }
+}
+
+button[data-type=icon] {
+    background-color: transparent;
+    border: none;
+
+    .icon {
+        width: 10px;
+        height: 10px;
+        --icon-color: $primary-400;
+    }
+}

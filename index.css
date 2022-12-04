@@ -1,0 +1,124 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+input, textarea {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.bg-primary-400 {
+  background-color: #00b289;
+}
+
+.bg-accent-400 {
+  background-color: #f8db62;
+}
+
+.bg-neutral-100 {
+  background-color: #fff;
+}
+
+.bg-neutral-900 {
+  background-color: #4c4d5f;
+}
+
+.color-primary-400 {
+  color: #00b289;
+}
+
+.color-accent-400 {
+  color: #f8db62;
+}
+
+.color-neutral-100 {
+  color: #fff;
+}
+
+.color-neutral-900 {
+  color: #4c4d5f;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.ff-lato {
+  font-family: "Lato", sans-serif;
+}
+
+.ff-times {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+button {
+  cursor: pointer;
+}
+
+button[data-type=normal] {
+  padding: 0.55rem 0.95rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+button[data-type=normal][data-color=primary] {
+  background-color: #00b289;
+  color: #fff;
+  border: 1px solid #00b289;
+  transition: background-color 0.35s, border-color 0.35s;
+}
+button[data-type=normal][data-color=primary]:hover, button[data-type=normal][data-color=primary]:focus-within {
+  background-color: #00a37e;
+  border-color: #00a37e;
+}
+
+button[data-type=outline] {
+  padding: 0.55rem 0.95rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  border: 1.5px solid transparent;
+}
+button[data-type=outline][data-color=primary] {
+  background-color: transparent;
+  border-color: #00b289;
+  color: #00b289;
+  transition: background-color 0.35s, color 0.35s;
+}
+button[data-type=outline][data-color=primary]:hover, button[data-type=outline][data-color=primary]:focus-within {
+  background-color: #00b289;
+  color: #fff;
+}
+
+button[data-type=icon] {
+  background-color: transparent;
+  border: none;
+}
+button[data-type=icon] .icon {
+  width: 10px;
+  height: 10px;
+  --icon-color: $primary-400;
+}
+
+/*# sourceMappingURL=index.css.map */
