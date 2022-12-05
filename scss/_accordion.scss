@@ -1,0 +1,82 @@
+@import './colors';
+
+.accordion-wrapper {
+    padding: 1rem;
+    max-width: 45em;
+    margin-inline: auto;
+}
+
+.accordion-heading {
+    font-size: 1.45rem;
+
+    button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: .5rem;
+        width: 100%;
+
+        span {
+            text-align: left;
+            color: $neutral-900;
+        }
+
+        .icon {
+            --icon-color: $neutral-400;
+            width: 20px;
+            height: 20px;
+            transform: rotate(90deg);
+        }
+    }
+
+    &[aria-expanded] {
+        & + .accordion-content {
+            max-height: 100vh;
+            overflow: visible;
+            margin-bottom: .75rem;
+        }
+    }
+
+    &:hover {
+        button span {
+            color: $primary-400;
+        }
+    }
+    
+}
+
+.accordion-content {
+    margin-top: 1rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .15s, overflow .15s; 
+
+    .accordion-desc {
+        font-size: .85rem;
+        line-height: 1.75;
+    }
+}
+
+@media screen and (min-width: 50em) {
+    .accordion-wrapper {
+        padding: 1.4rem;
+    }
+
+    .accordion-heading {
+        font-size: 1.65rem;
+    
+        button {
+            gap: .75rem;
+        }
+    
+    }
+
+    .accordion-content {
+        margin-top: 1rem;
+    
+        .accordion-desc {
+            font-size: .95rem;
+        }
+    }
+    
+}
