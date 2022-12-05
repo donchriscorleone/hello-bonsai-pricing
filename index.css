@@ -316,5 +316,69 @@ input[type=checkbox] {
     font-size: 0.95rem;
   }
 }
+.dropdown-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.dropdown-wrapper:has(button[aria-expanded]) + .dropdown-list {
+  max-height: 100vh;
+  overflow: visible;
+}
+
+.dropdown-title {
+  font-size: 0.95rem;
+  color: #4c4d5f;
+}
+
+.dropdown-arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+}
+.dropdown-arrow .icon {
+  width: 15px;
+  height: 15px;
+  --icon-color: $neutral-900;
+  rotate: 90deg;
+}
+
+.dropdown-list {
+  margin-top: 0.35rem;
+  margin-left: 0.5rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s, overflow 0.35s;
+}
+.dropdown-list li:not(:last-child) {
+  margin-bottom: 0.25rem;
+}
+.dropdown-list li a {
+  color: #4c4d5f;
+  font-size: 0.95rem;
+}
+
+@media screen and (min-width: 50em) {
+  .dropdown-wrapper {
+    gap: 0.55rem;
+  }
+
+  .dropdown-title {
+    font-size: 1.15rem;
+  }
+
+  .dropdown-list {
+    margin-top: 0.4rem;
+    margin-left: 0.55rem;
+  }
+  .dropdown-list li:not(:last-child) {
+    margin-bottom: 0.35rem;
+  }
+  .dropdown-list li a {
+    font-size: 1.15rem;
+  }
+}
 
 /*# sourceMappingURL=index.css.map */

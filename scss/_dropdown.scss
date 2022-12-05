@@ -1,0 +1,78 @@
+@import './colors';
+
+$link-fs: .95rem;
+
+.dropdown-wrapper {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+    &:has( button[aria-expanded]) {
+        & + .dropdown-list {
+            max-height: 100vh;
+            overflow: visible;
+        }
+    }
+}
+
+.dropdown-title {
+    font-size: $link-fs;
+    color: $neutral-900;
+}
+
+.dropdown-arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+
+    .icon {
+        width: 15px;
+        height: 15px;
+        --icon-color: $neutral-900;
+        rotate: 90deg;
+    }
+}
+
+.dropdown-list {
+    margin-top: .35rem;
+    margin-left: .5rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .35s, overflow .35s;
+
+    li:not(:last-child) {
+        margin-bottom: .25rem;
+    }
+
+    li a {
+        color: $neutral-900;
+        font-size: $link-fs;
+    }
+}
+
+@media screen and (min-width: 50em) {
+    $link-fs: 1.15rem;
+
+    .dropdown-wrapper {
+        gap: .55rem;
+    }
+
+    .dropdown-title {
+        font-size: $link-fs;
+    }
+
+    .dropdown-list {
+        margin-top: .4rem;
+        margin-left: .55rem;
+    
+        li:not(:last-child) {
+            margin-bottom: .35rem;
+        }
+    
+        li a {
+            font-size: $link-fs;
+        }
+    }
+}
