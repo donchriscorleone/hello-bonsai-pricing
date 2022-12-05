@@ -74,6 +74,16 @@ body {
   text-transform: uppercase;
 }
 
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 button {
   cursor: pointer;
 }
@@ -119,6 +129,38 @@ button[data-type=icon] .icon {
   width: 10px;
   height: 10px;
   --icon-color: $primary-400;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #00b289;
+  border-radius: 100vmax;
+  padding: 0.15rem;
+  max-width: calc(70px + 0.3rem);
+}
+
+label {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+label .toggle-ball {
+  width: 35px;
+  height: 35px;
+  background-color: #fff;
+  border-radius: 100%;
+  transition: transform 0.35s;
+}
+
+label:has(+ input[type=checkbox]:checked) .toggle-ball {
+  transform: translateX(100%);
+}
+
+input[type=checkbox] {
+  position: absolute;
+  left: -9000px;
 }
 
 /*# sourceMappingURL=index.css.map */
