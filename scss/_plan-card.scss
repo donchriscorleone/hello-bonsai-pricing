@@ -1,2 +1,117 @@
 @import './colors';
 
+.plan-card {
+    box-shadow: 0 0 68px 0 rgb(2 4 69 / 8%);
+    border: .3px solid rgba(2,4,69,.15);
+    max-width: 30em;
+    margin-inline: auto;
+    position: relative;
+    .popular-tag {
+        display: none;
+    }
+
+    &[data-type=popular] {
+        overflow: hidden;
+        .popular-tag {
+            display: block;
+            position: absolute;
+            background-color: $primary-400;
+            color: $neutral-100;
+            padding: .5rem;
+            width: 100%;
+            text-align: center;
+            right: -175px;
+            top: 48px;
+            transform: rotate(45deg);
+
+
+            span {
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                font-weight: 700;
+                font-size: .85rem;
+            }
+        }
+    }
+}
+
+.plan-wrapper {
+    padding: 4rem 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.plan-heading {
+    display: flex;
+    flex-direction: column;
+    gap: .35rem;
+    color: $neutral-900;
+
+    .plan-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .plan-desc {
+        font-size: .85rem;
+        line-height: 1.5;
+    }
+}
+
+.plan-price-wrapper {
+    display: flex;
+    align-items: center;
+    gap: .35rem;
+    color: $neutral-900;
+    border-bottom: 2px solid $primary-400;
+    padding-bottom: .5rem;
+
+    .plan-currency {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .plan-price {
+        font-size: 4rem;
+        font-weight: 700;
+    }
+
+    .plan-duration {
+        text-transform: uppercase;
+        align-self: flex-end;
+        margin-left: .5rem;
+        font-size: 1.2rem;
+    }
+}
+
+.plan-features {
+    color: $neutral-900;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    ul li {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+
+        .icon {
+            width: 15px;
+            height: 15px;
+        }
+    }
+}
+
+.plan-action {
+    button {
+        padding-block: 1rem;
+        width: 100%;
+        font-size: .85rem;
+        font-weight: 700;
+    }
+}

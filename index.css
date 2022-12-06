@@ -22,6 +22,10 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+ul, ol {
+  list-style-type: none;
+}
+
 .bg-primary-400 {
   background-color: #00b289;
 }
@@ -379,6 +383,107 @@ input[type=checkbox] {
   .dropdown-list li a {
     font-size: 1.15rem;
   }
+}
+.plan-card {
+  box-shadow: 0 0 68px 0 rgba(2, 4, 69, 0.08);
+  border: 0.3px solid rgba(2, 4, 69, 0.15);
+  max-width: 30em;
+  margin-inline: auto;
+  position: relative;
+}
+.plan-card .popular-tag {
+  display: none;
+}
+.plan-card[data-type=popular] {
+  overflow: hidden;
+}
+.plan-card[data-type=popular] .popular-tag {
+  display: block;
+  position: absolute;
+  background-color: #00b289;
+  color: #fff;
+  padding: 0.5rem;
+  width: 100%;
+  text-align: center;
+  right: -175px;
+  top: 48px;
+  transform: rotate(45deg);
+}
+.plan-card[data-type=popular] .popular-tag span {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.plan-wrapper {
+  padding: 4rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.plan-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  color: #4c4d5f;
+}
+.plan-heading .plan-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.plan-heading .plan-desc {
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.plan-price-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: #4c4d5f;
+  border-bottom: 2px solid #00b289;
+  padding-bottom: 0.5rem;
+}
+.plan-price-wrapper .plan-currency {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.plan-price-wrapper .plan-price {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.plan-price-wrapper .plan-duration {
+  text-transform: uppercase;
+  align-self: flex-end;
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.plan-features {
+  color: #4c4d5f;
+}
+.plan-features ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.plan-features ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.plan-features ul li .icon {
+  width: 15px;
+  height: 15px;
+}
+
+.plan-action button {
+  padding-block: 1rem;
+  width: 100%;
+  font-size: 0.85rem;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=index.css.map */
