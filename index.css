@@ -415,6 +415,9 @@ input[type=checkbox] {
   font-weight: 700;
   font-size: 0.85rem;
 }
+.plan-card[data-plan=yearly] .billed-yearly {
+  display: block;
+}
 
 .plan-wrapper {
   padding: 4rem 1.5rem;
@@ -459,6 +462,12 @@ input[type=checkbox] {
   align-self: flex-end;
   margin-left: 0.5rem;
   font-size: 1.2rem;
+}
+.plan-price-wrapper .billed-yearly {
+  display: none;
+  margin-left: auto;
+  align-self: flex-end;
+  font-size: 0.85rem;
 }
 
 .plan-features {

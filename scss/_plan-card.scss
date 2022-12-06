@@ -33,6 +33,12 @@
             }
         }
     }
+
+    &[data-plan=yearly] {
+        .billed-yearly {
+            display: block;
+        }
+    }
 }
 
 .plan-wrapper {
@@ -83,6 +89,13 @@
         align-self: flex-end;
         margin-left: .5rem;
         font-size: 1.2rem;
+    }
+
+    .billed-yearly {
+        display: none;
+        margin-left: auto;
+        align-self: flex-end;
+        font-size: .85rem;
     }
 }
 
