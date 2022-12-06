@@ -10,36 +10,43 @@
     <title>Pricing - Bonsai Freelance Solution</title>
 </head>
 <body>
-    <div class="dropdown-container">
-        <div class="dropdown-wrapper">
-            <a href="#" class="dropdown-title">Invoice Templates</a>
-            <button class="dropdown-arrow" aria-label="Dropdown button">
-                <svg class="icon">
-                    <use xlink:href="./sprites/icon-utilities.svg#icon-arrow"></use>
-                </svg>
-            </button>
-        </div>
-        <ul class="dropdown-list">
-            <li><a href="#">Invoice Generator</a></li>
-            <li><a href="#">Blank Invoice Generator</a></li>
-            <li><a href="#">Consultant Voice Template</a></li>
-        </ul>
-    </div>
+    <div class="plan-card">
+        <div class="plan-wrapper">
+            <div class="plan-heading">
+                <span class="plan-title">Starter</span>
+                <span class="plan-desc">Ideal for freelancers and contractors just starting out.</span>
+            </div>
 
-    <div class="dropdown-container">
-        <div class="dropdown-wrapper">
-            <a href="#" class="dropdown-title">Invoice Templates</a>
-            <button class="dropdown-arrow" aria-label="Dropdown button">
-                <svg class="icon">
-                    <use xlink:href="./sprites/icon-utilities.svg#icon-arrow"></use>
-                </svg>
-            </button>
+            <div class="plan-price-wrapper">
+                <span class="plan-currency">$</span>
+                <div class="plan-price">24</div>
+                <span class="plan-duration">/month</span>
+            </div>
+
+            <div class="plan-features">
+                <ul>
+                    <li>
+                        <svg class="icon">
+                            <use xlink:href="./sprites/icon-utilities.svg#icon-tick"></use>
+                        </svg>
+                        <span class="plan-feature-title">All Templates</span>
+                    </li>
+                    <!-- <li>
+                        <span class="plan-feature-title">All Templates</span>
+                    </li>
+                    <li>
+                        <span class="plan-feature-title">All Templates</span>
+                    </li>
+                    <li>
+                        <span class="plan-feature-title">All Templates</span>
+                    </li> -->
+                </ul>
+            </div>
+
+            <div class="plan-action">
+                <button class="uppercase" data-type="normal" data-color="primary" data-size="lg">Start free</button>
+            </div>
         </div>
-        <ul class="dropdown-list">
-            <li><a href="#">Invoice Generator</a></li>
-            <li><a href="#">Blank Invoice Generator</a></li>
-            <li><a href="#">Consultant Voice Template</a></li>
-        </ul>
     </div>
     <script src="./index.js"></script>
 </body>
