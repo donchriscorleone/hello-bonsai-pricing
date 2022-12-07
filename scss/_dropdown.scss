@@ -48,13 +48,10 @@ $link-fs: .95rem;
 
     li a {
         color: $neutral-900;
-        font-size: $link-fs;
     }
 }
 
 @media screen and (min-width: 50em) {
-    $link-fs: 1.15rem;
-
     .dropdown-wrapper {
         gap: .55rem;
     }
@@ -71,8 +68,5 @@ $link-fs: .95rem;
             margin-bottom: .35rem;
         }
     
-        li a {
-            font-size: $link-fs;
-        }
     }
 }

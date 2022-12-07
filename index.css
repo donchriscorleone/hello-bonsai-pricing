@@ -74,6 +74,42 @@ ul, ol {
   font-family: "Times New Roman", Times, serif;
 }
 
+.fs-100 {
+  font-size: 0.5rem;
+}
+
+.fs-200 {
+  font-size: 0.85rem;
+}
+
+.fs-300 {
+  font-size: 1rem;
+}
+
+.fs-400 {
+  font-size: 1.35rem;
+}
+
+.fs-500 {
+  font-size: 1.85rem;
+}
+
+.fs-600 {
+  font-size: 2.15rem;
+}
+
+.fs-700 {
+  font-size: 2.6rem;
+}
+
+.fs-800 {
+  font-size: 3rem;
+}
+
+.fs-900 {
+  font-size: 3.5rem;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -86,6 +122,10 @@ ul, ol {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+.spacer {
+  margin-block: --padding, 1rem;
 }
 
 button {
@@ -361,7 +401,6 @@ input[type=checkbox] {
 }
 .dropdown-list li a {
   color: #4c4d5f;
-  font-size: 0.95rem;
 }
 
 @media screen and (min-width: 50em) {
@@ -370,7 +409,7 @@ input[type=checkbox] {
   }
 
   .dropdown-title {
-    font-size: 1.15rem;
+    font-size: 0.95rem;
   }
 
   .dropdown-list {
@@ -379,9 +418,6 @@ input[type=checkbox] {
   }
   .dropdown-list li:not(:last-child) {
     margin-bottom: 0.35rem;
-  }
-  .dropdown-list li a {
-    font-size: 1.15rem;
   }
 }
 .plan-card {
@@ -493,6 +529,62 @@ input[type=checkbox] {
   width: 100%;
   font-size: 0.85rem;
   font-weight: 700;
+}
+
+footer {
+  padding: 2rem;
+}
+footer a {
+  color: #4c4d5f;
+  font-weight: 300;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.footer-list:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.footer-list-title {
+  color: #4c4d5f;
+  display: inline-block;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.footer-list-title.sub-list-title {
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 50em) {
+  .footer-wrapper {
+    max-width: 50em;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-list:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+
+  .footer-list-title:not(.sub-list-title) {
+    margin-bottom: 2.5rem;
+  }
+  .footer-list-title.sub-list-title {
+    margin-top: 0;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

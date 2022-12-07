@@ -1,0 +1,70 @@
+@import './colors';
+
+footer {
+    padding: 2rem;
+
+    a {
+        color: $neutral-900;
+        font-weight: 300;
+        font-size: .95rem;
+        line-height: 1.5;
+    }
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+    &:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+}
+
+.footer-list-title {
+    color: $neutral-900;
+    display: inline-block;
+    font-weight: 700;
+    margin-bottom: 1rem;
+
+
+    &.sub-list-title {
+        margin-top: 1rem;
+    }
+}
+
+
+@media screen and (min-width: 50em) {
+    .footer-wrapper {
+        max-width: 50em;
+        margin-inline: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-list {
+    
+        &:not(:last-child) {
+            margin-bottom: 3rem;
+        }
+    }
+
+    .footer-list-title {
+        &:not(.sub-list-title) {
+            margin-bottom: 2.5rem;
+        }
+
+        &.sub-list-title {
+            margin-top: 0;
+        }
+    }
+
+    
+}

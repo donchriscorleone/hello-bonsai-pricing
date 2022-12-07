@@ -48,6 +48,42 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+.fs-100 {
+    font-size: .5rem;
+}
+
+.fs-200 {
+    font-size: .85rem;
+}
+
+.fs-300 {
+    font-size: 1rem;
+}
+
+.fs-400 {
+    font-size: 1.35rem;
+}
+
+.fs-500 {
+    font-size: 1.85rem;
+}
+
+.fs-600 {
+    font-size: 2.15rem;
+}
+
+.fs-700 {
+    font-size: 2.6rem;
+}
+
+.fs-800 {
+    font-size: 3rem;
+}
+
+.fs-900 {
+    font-size: 3.5rem;
+}
+
 .uppercase {
     text-transform: uppercase;
 }
@@ -60,5 +96,9 @@
     position: absolute;
     white-space: nowrap; 
     width: 1px;
-  }
+}
+
+.spacer {
+    margin-block: (--padding, 1rem);
+}
 
